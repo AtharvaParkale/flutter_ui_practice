@@ -34,7 +34,11 @@ class _UsersScreenState extends State<UsersScreen> {
           if (state is LoadingState) {
             return Text("Loading");
           } else if (state is SuccessState) {
-            return Text(users[0].title);
+            return Scaffold(
+              body: ListView(
+                children: users.map((user) => Text(user.body)).toList(),
+              ),
+            );
           } else if (state is ErrorState) {
             return Text("Error");
           }

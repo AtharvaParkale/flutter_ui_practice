@@ -3,6 +3,7 @@ import 'package:demo_app_three/features/dummy_api/data/repositories/repository_i
 import 'package:demo_app_three/features/dummy_api/domain/usecase/get_data_usecase.dart';
 import 'package:demo_app_three/features/dummy_api/presentation/bloc/dummy_bloc.dart';
 import 'package:demo_app_three/features/dummy_api/presentation/screens/users_screen.dart';
+import 'package:demo_app_three/features/practice_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
             RepositoryImpl(RemoteDatasourceImpl()),
           ),
         ),
-        child: UsersScreen(),
+        // child: UsersScreen(),
+        child: PracticeScreen(),
       ),
     );
   }
