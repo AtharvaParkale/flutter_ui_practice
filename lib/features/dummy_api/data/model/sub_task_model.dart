@@ -6,4 +6,12 @@ class SubTaskModel extends SubTask {
   factory SubTaskModel.fromJson(Map<String, dynamic> json) {
     return SubTaskModel(description: json["description"], id: json["id"]);
   }
+
+
+  Map<String, dynamic> toJson() {
+    return {
+      "id": id,
+      "description": description,
+    };
+  }
 }

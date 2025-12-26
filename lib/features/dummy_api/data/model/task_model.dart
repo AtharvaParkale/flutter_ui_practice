@@ -4,6 +4,16 @@ import 'package:demo_app_three/features/dummy_api/domain/entities/task.dart';
 class TaskModel extends Task {
   TaskModel({required super.title, required super.id, required super.subTasks});
 
+  Map<String, dynamic> toJson() {
+    return {
+      "id": id,
+      "title": title,
+      "subTasks": subTasks
+          .map((e) => (e as SubTaskModel).toJson())
+          .toList(),
+    };
+  }
+
   factory TaskModel.fromJson(Map<String, dynamic> json) {
     return TaskModel(
       title: json["title"] ?? "",
