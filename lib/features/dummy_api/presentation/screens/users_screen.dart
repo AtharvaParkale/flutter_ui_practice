@@ -50,8 +50,16 @@ class _UsersScreenState extends State<UsersScreen> {
             );
           } else if (state is TasksSuccessState) {
             return Scaffold(
-              body: ListView(
-                children: tasks.map((task) => Text(task.title)).toList(),
+              body: ListView.builder(
+                itemCount: tasks.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return ExpansionTile(
+                    title: Text(tasks[index].title),
+                    children: tasks[index].subTasks
+                        .map((subTask) => Text(subTask.description))
+                        .toList(),
+                  );
+                },
               ),
             );
           } else if (state is ErrorState) {
