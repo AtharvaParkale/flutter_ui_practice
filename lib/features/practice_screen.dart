@@ -43,9 +43,9 @@ class _PracticeScreenState extends State<PracticeScreen> {
             ),
             SizedBox(height: 10),
             OutlinedButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute<void>(
+              onPressed: () async {
+                final result = await Navigator.of(context).push(
+                  MaterialPageRoute<String>(
                     builder: (BuildContext context) => BlocProvider(
                       create: (context) => DummyBloc(
                         getDataUseCase: GetDataUseCase(
@@ -60,6 +60,8 @@ class _PracticeScreenState extends State<PracticeScreen> {
                     ),
                   ),
                 );
+
+                print("Result :: ${result}");
               },
               child: Container(
                 color: Colors.black,

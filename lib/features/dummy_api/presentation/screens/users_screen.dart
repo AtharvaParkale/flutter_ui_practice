@@ -25,6 +25,16 @@ class _UsersScreenState extends State<UsersScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        actions: [
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).pop("Atharva");
+            },
+            child: Text("Back"),
+          ),
+        ],
+      ),
       body: BlocConsumer<DummyBloc, DummyState>(
         listener: (context, state) {
           // if (state is SuccessState) {
@@ -54,18 +64,16 @@ class _UsersScreenState extends State<UsersScreen> {
               ),
             );
           } else if (state is TasksSuccessState) {
-            return Scaffold(
-              body: ListView.builder(
-                itemCount: tasks.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return ExpansionTile(
-                    title: Text(tasks[index].title),
-                    children: tasks[index].subTasks
-                        .map((subTask) => Text(subTask.description))
-                        .toList(),
-                  );
-                },
-              ),
+            return ListView.builder(
+              itemCount: tasks.length,
+              itemBuilder: (BuildContext context, int index) {
+                return ExpansionTile(
+                  title: Text(tasks[index].title),
+                  children: tasks[index].subTasks
+                      .map((subTask) => Text(subTask.description))
+                      .toList(),
+                );
+              },
             );
           } else if (state is ErrorState) {
             return Text("Error");

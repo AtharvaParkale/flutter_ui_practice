@@ -13,9 +13,9 @@
 12. How to add multi bloc provider [DONE]
 13. How to add dependency? [DONE]
 14. How to set up BottomSheet? [DONE]
-15. List filtering in flutter (where in dart), filtering in dart
-16. Navigation examples?
-17. Navigate with result back
+15. List filtering in flutter (where in dart), filtering in dart [DONE]
+16. Navigation examples? [DONE]
+17. Navigate with result back 
 18. Tickers in flutter
 19. Streams in flutter
 20. Widget binding observer in flutter
