@@ -2,7 +2,6 @@
 2. How to parse from string , double and int? - [DONE]
 3. Difference between TextFiled and text form field? - [DONE]
 4. How is validator used in flutter forms? - [DONE]
-
 5. Manual json serialization [DONE]
 6. Automatic Json serialization (Use the website Json to dart conversion) [DONE]
 7. Functions to write toJson and from Json code? [DONE]
@@ -15,13 +14,15 @@
 14. How to set up BottomSheet? [DONE]
 15. List filtering in flutter (where in dart), filtering in dart [DONE]
 16. Navigation examples? [DONE]
-17. Navigate with result back 
-18. Tickers in flutter
-19. Streams in flutter
+17. Navigate with result back [DONE]
+18. Tickers in flutter [DONE]
+19. Streams in flutter [PENDING]
+
 20. Widget binding observer in flutter
 21. Bottom navbar, sidebar in flutter
 22. Get and store data into shared preferences
 23. Get and store data from JSON files
-
 24. HTTP client implementation
 25. ListView, ListViewBuilder, BottomNavbar, ExpansionTile
+26. How are animation implemented in flutter?
+27. Route aware implementation

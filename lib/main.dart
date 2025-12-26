@@ -1,4 +1,4 @@
-import 'package:demo_app_three/features/practice_screen.dart';
+import 'package:demo_app_three/features/widget_binding_observer.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       //   // child: UsersScreen(),
       //   child: PracticeScreen(),
       // ),
-      home: PracticeScreen(),
+      home: WidgetBindingObserverExample(),
     );
   }
 }
