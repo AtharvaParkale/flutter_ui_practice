@@ -32,6 +32,11 @@ class _UsersScreenState extends State<UsersScreen> {
           // }
           if (state is TasksSuccessState) {
             tasks = state.tasks;
+
+            // final newTask = state.tasks.where((task) {
+            //   return task.title.contains("A");
+            // }).toList();
+            // tasks = newTask;
           }
         },
         buildWhen: (prev, curr) =>
