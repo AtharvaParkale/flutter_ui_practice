@@ -14,3 +14,9 @@ class SuccessState implements DummyState {
 class LoadingState implements DummyState {}
 
 class ErrorState implements DummyState {}
+
+class TasksSuccessState implements DummyState {
+  final List<Task> tasks;
+
+  TasksSuccessState({required this.tasks});
+}

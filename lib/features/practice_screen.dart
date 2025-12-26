@@ -2,6 +2,7 @@ import 'package:demo_app_three/features/app_bottom_sheet.dart';
 import 'package:demo_app_three/features/dummy_api/data/datasources/remote_datasource.dart';
 import 'package:demo_app_three/features/dummy_api/data/repositories/repository_impl.dart';
 import 'package:demo_app_three/features/dummy_api/domain/usecase/get_data_usecase.dart';
+import 'package:demo_app_three/features/dummy_api/domain/usecase/get_tasks.dart';
 import 'package:demo_app_three/features/dummy_api/presentation/bloc/dummy_bloc.dart';
 import 'package:demo_app_three/features/dummy_api/presentation/screens/users_screen.dart';
 import 'package:flutter/material.dart';
@@ -48,6 +49,9 @@ class _PracticeScreenState extends State<PracticeScreen> {
                     builder: (BuildContext context) => BlocProvider(
                       create: (context) => DummyBloc(
                         getDataUseCase: GetDataUseCase(
+                          RepositoryImpl(RemoteDatasourceImpl()),
+                        ),
+                        getTasksUseCase: GetTasksUseCase(
                           RepositoryImpl(RemoteDatasourceImpl()),
                         ),
                       ),

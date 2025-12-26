@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "title": "Morning Workout",
+    "subTasks": [
+      {
+        "id": 101,
+        "description": "Warm-up"
+      },
+      {
+        "id": 102,
+        "description": "Weight training"
+      },
+      {
+        "id": 103,
+        "description": "Stretching"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Office Tasks",
+    "subTasks": [
+      {
+        "id": 201,
+        "description": "Check emails"
+      },
+      {
+        "id": 202,
+        "description": "Attend stand-up meeting"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Learning Flutter",
+    "subTasks": [
+      {
+        "id": 301,
+        "description": "Read about widgets"
+      },
+      {
+        "id": 302,
+        "description": "Build a sample app"
+      },
+      {
+        "id": 303,
+        "description": "Practice state management"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Grocery Shopping",
+    "subTasks": [
+      {
+        "id": 401,
+        "description": "Buy vegetables"
+      },
+      {
+        "id": 402,
+        "description": "Buy fruits"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Evening Walk",
+    "subTasks": [
+      {
+        "id": 501,
+        "description": "Walk for 30 minutes"
+      },
+      {
+        "id": 502,
+        "description": "Cool down"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Project Work",
+    "subTasks": [
+      {
+        "id": 601,
+        "description": "Implement API integration"
+      },
+      {
+        "id": 602,
+        "description": "Fix UI bugs"
+      },
+      {
+        "id": 603,
+        "description": "Write unit tests"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Reading",
+    "subTasks": [
+      {
+        "id": 701,
+        "description": "Read tech article"
+      },
+      {
+        "id": 702,
+        "description": "Summarize key points"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "House Chores",
+    "subTasks": [
+      {
+        "id": 801,
+        "description": "Clean room"
+      },
+      {
+        "id": 802,
+        "description": "Do laundry"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Interview Preparation",
+    "subTasks": [
+      {
+        "id": 901,
+        "description": "Revise DSA"
+      },
+      {
+        "id": 902,
+        "description": "Practice coding problems"
+      },
+      {
+        "id": 903,
+        "description": "Mock interview"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Night Routine",
+    "subTasks": [
+      {
+        "id": 1001,
+        "description": "Plan next day"
+      },
+      {
+        "id": 1002,
+        "description": "Meditation"
+      }
+    ]
+  }
+]
